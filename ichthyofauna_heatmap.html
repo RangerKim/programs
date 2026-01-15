@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ichthyofauna of Floyds Fork – Heat Map Activity</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    h1 {
+        text-align: center;
+        color: #2a5d34;
+    }
+    h2 {
+        color: #2a5d34;
+        border-bottom: 2px solid #2a5d34;
+        padding-bottom: 4px;
+        margin-top: 20px;
+    }
+    ul {
+        margin-left: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    table, th, td {
+        border: 1px solid #999;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+    }
+    th {
+        background-color: #d3e0d9;
+    }
+    .ido {
+        background-color: #c8e6c9; /* green */
+    }
+    .wedo {
+        background-color: #fff9c4; /* yellow */
+    }
+    .youdo {
+        background-color: #bbdefb; /* blue */
+    }
+    .ranger-section {
+        background-color: #fff9c4;
+        padding: 8px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        border-left: 4px solid #fbc02d;
+    }
+    /* Heat map legend styles */
+    .legend ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .legend li {
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+    }
+    .legend-color {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        border: 1px solid #333;
+    }
+</style>
+</head>
+<body>
+
+<h1>Ichthyofauna of Floyds Fork – Heat Map Activity</h1>
+
+<h2>Grade Band</h2>
+<ul>
+    <li>5–8</li>
+</ul>
+
+<h2>Duration</h2>
+<ul>
+    <li>60 minutes</li>
+</ul>
+
+<h2>Learning Setting</h2>
+<ul>
+    <li>Hybrid (Indoor & Outdoor)</li>
+</ul>
+
+<h2>Phenomenon / Topic</h2>
+<ul>
+    <li>Local fish species and their distribution along Floyds Fork creek and parklands</li>
+</ul>
+
+<h2>NGSS Alignment</h2>
+<ul>
+    <li>MS-LS2-1: Analyze and interpret data to provide evidence for the effects of resource availability on organisms and populations of organisms in an ecosystem.</li>
+    <li>MS-LS2-2: Construct an explanation that predicts patterns of interactions among organisms across multiple ecosystems.</li>
+    <li>Crosscutting Concepts: Systems and System Models, Patterns, Cause and Effect, Stability and Change</li>
+</ul>
+
+<h2>Learning Objectives</h2>
+<ul>
+    <li>Identify local fish species and their preferred habitats along the creek and parklands.</li>
+    <li>Explain how environmental factors influence fish distribution.</li>
+    <li>Model and visualize fish population patterns with a heat map of the parklands.</li>
+    <li>Reflect on human and environmental impacts on local ichthyofauna.</li>
+    <li>Synthesize observations into a spatial analysis that communicates ecological insights.</li>
+</ul>
+
+<h2>Key Vocabulary</h2>
+<ul>
+    <li>Ichthyofauna – fish species of a particular region</li>
+    <li>Habitat – the natural environment where an organism lives</li>
+    <li>Heat Map – a visual representation of data intensity or density</li>
+    <li>Ecosystem – a community of living organisms interacting with their environment</li>
+    <li>Interdependence – how organisms rely on each other and environmental factors</li>
+</ul>
+
+<h2>Materials</h2>
+<ul>
+    <li>Large paper map or hand-drawn poster of Floyds Fork creek and parklands</li>
+    <li>Colored pencils, markers, or crayons</li>
+    <li>Field guides / printed fish ID sheets</li>
+    <li>Clipboards, notebooks, pencils</li>
+    <li>Yarn or string (optional for habitat zones)</li>
+    <li>Sticky notes or small labels for fish species</li>
+    <li>Magnifying glasses, nets, or simple water testing kits (optional)</li>
+</ul>
+
+<h2>Heat Map Legend</h2>
+<p>This legend shows how to represent fish abundance and habitat types along Floyds Fork creek and parklands:</p>
+<div class="legend">
+    <ul>
+        <li><span class="legend-color" style="background-color:#ff0000;"></span> High fish abundance</li>
+        <li><span class="legend-color" style="background-color:#ffa500;"></span> Moderate fish abundance</li>
+        <li><span class="legend-color" style="background-color:#ffff00;"></span> Low fish abundance</li>
+        <li><span class="legend-color" style="background-color:#0000ff;"></span> Deep pools / main channel</li>
+        <li><span class="legend-color" style="background-color:#00ffff;"></span> Shallow areas / riffles</li>
+        <li><span class="legend-color" style="background-color:#008000;"></span> Wooded banks / forested areas</li>
+        <li><span class="legend-color" style="background-color:#ffff99;"></span> Open meadows / floodplain areas</li>
+        <li><span class="legend-color" style="background-color:#00ff00;"></span> Vegetation zones (likely shelter)</li>
+    </ul>
+</div>
+
+<h2>Lesson Procedure</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Activity</th>
+            <th>Instructional Role</th>
+            <th>Details / Ranger Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="ido">
+            <td>5 min</td>
+            <td>Hook & Engagement</td>
+            <td>I Do</td>
+            <td class="ranger-section">
+                Ask: “Where do different fish species live along Floyds Fork creek and parklands, and why?” Show printed fish images.  
+                <strong>Leading Questions:</strong> 
+                <ul>
+                    <li>What might a fish need to survive in this area?</li>
+                    <li>Why do some fish prefer pools while others prefer shallow areas?</li>
+                    <li>How could plants or rocks affect where fish are found?</li>
+                </ul>
+                Indoor option: use classroom map or floor diagram of park.
+            </td>
+        </tr>
+        <tr class="ido">
+            <td>5 min</td>
+            <td>Explain Heat Map Task</td>
+            <td>I Do</td>
+            <td class="ranger-section">
+                Introduce goal: create a heat map showing fish distribution and habitats. Review legend and map layout.  
+                <strong>Leading Questions:</strong>
+                <ul>
+                    <li>How can we show areas with lots of fish versus areas with few?</li>
+                    <li>Which features of the creek or park might influence fish abundance?</li>
+                    <li>What symbols or colors should we use to make our map easy to read?</li>
+                </ul>
+                Answer clarifying questions.
+            </td>
+        </tr>
+        <tr class="wedo">
+            <td>5 min</td>
+            <td>Assign Observation Groups & Zones</td>
+            <td>We Do</td>
+            <td class="ranger-section">
+                Divide students into groups, assign sections of the creek/parklands.  
+                <strong>Leading Questions:</strong>
+                <ul>
+                    <li>Which part of the park might have different types of habitats?</li>
+                    <li>How can your group collect observations efficiently in your section?</li>
+                </ul>
+                Indoor option: assign sections on printed map or classroom floor plan.
+            </td>
+        </tr>
+        <tr class="wedo">
+            <td>15 min</td>
+            <td>Outdoor Exploration / Data Collection</td>
+            <td>We Do</td>
+            <td class="ranger-section">
+                Students record water depth, flow, vegetation, and fish signs. Encourage discussion of patterns.  
+                <strong>Leading Questions:</strong>
+                <ul>
+                    <li>Where do you see signs of fish activity? Why might fish be here?</li>
+                    <li>How does water depth or flow affect which species are present?</li>
+                    <li>What patterns do you notice along your section of the creek?</li>
+                </ul>
+                Indoor option: use photos, videos, or pre-recorded data.
+            </td>
+        </tr>
+        <tr class="youdo">
+            <td>10 min</td>
+            <td>Begin Heat Map Creation</td>
+            <td>You Do</td>
+            <td class="ranger-section">
+                Students start marking fish distribution on the map using the legend.  
+                <strong>Leading Questions:</strong>
+                <ul>
+                    <li>Which areas have the highest fish abundance and why?</li>
+                    <li>Do different species appear in the same area or separate areas?</li>
+                    <li>How can you show both species and habitat features clearly?</li>
+                </ul>
+                Encourage collaboration within groups.
+            </td>
+        </tr>
+        <tr class="youdo">
+            <td>10 min</td>
+            <td>Finalize Heat Map & Annotate</td>
+            <td>You Do</td>
+            <td class="ranger-section">
+                Students add species names, habitat notes, and reasoning.  
+                <strong>Leading Questions:</strong>
+                <ul>
+                    <li>Does your map match your observations? Why or why not?</li>
+                    <li>What environmental features seem to influence fish distribution the most?</li>
+                    <li>How could your map help others understand the creek ecosystem?</li>
+                </ul>
+                Check for consistency with observed data.
+            </td>
+        </tr>
+        <tr class="youdo">
+            <td>10 min</td>
+            <td>Reflection & Share-Out</td>
+            <td>You Do</td>
+            <td class="ranger-section">
+                Groups share heat maps with class.  
+                <strong>Leading Questions:</strong>
+                <ul>
+                    <li>Which habitats had the most fish? Why do you think that is?</li>
+                    <li>Did any observations surprise you?</li>
+                    <li>How could humans affect fish habitats here?</li>
+                </ul>
+                Indoor option: share maps digitally or on printed sheets.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Assessment / Evaluation</h2>
+<ul>
+    <li>Formative: Participation in observation, discussion, and mapping activity</li>
+    <li>Summative: Completed heat map with annotations showing understanding of species-habitat relationships, cause-and-effect, and visual communication of patterns</li>
+</ul>
+
+<h2>Extensions / Adaptations</h2>
+<ul>
+    <li>Math/Statistics: Count or estimate species abundance and create graphs or charts.</li>
+    <li>Language Arts: Write a narrative from a fish's perspective navigating the creek and parklands.</li>
+    <li>Art: Enhance heat maps with watercolors or illustrations.</li>
+    <li>Social Studies / Environmental Science: Discuss conservation strategies to protect creek habitats.</li>
+    <li>Adaptation: Indoor activities with images, videos, or printed maps if outdoor access is limited or weather is poor.</li>
+</ul>
+
+<h2>Educator Cheat Sheet</h2>
+<ul>
+    <li>Emphasize observing patterns and cause-and-effect rather than exact species counts.</li>
+    <li>Ensure each student group has a clear section of the creek/park map for the heat map.</li>
+    <li>Encourage reasoning aloud during indoor or outdoor exploration.</li>
+    <li>Use sticky notes to adjust heat map predictions after discussion.</li>
+    <li>Indoor fallback: Provide pre-made habitat photos and data sheets for the same activity flow.</li>
+</ul>
+
+<h2>Deeper Concepts / Extension Notes</h2>
+<ul>
+    <li>Discuss how environmental gradients (temperature, flow, vegetation) influence fish distribution.</li>
+    <li>Explore predator-prey relationships and resource competition in fish populations.</li>
+    <li>Introduce advanced mapping concepts like overlapping species zones or population density gradients.</li>
+    <li>Connect to local conservation efforts and watershed management.</li>
+    <li>Encourage students to think about long-term changes: climate change, urbanization, and human impact on creek ecosystems.</li>
+</ul>
+
+</body>
+</html>
